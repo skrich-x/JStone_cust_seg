@@ -1,28 +1,36 @@
 <!DOCTYPE html>
+
 <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+   <head>
+     <title>Johnstone Customer Info</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+
+      <!--Correcting display issue for select-->
+      <script>
+         $(document).ready(function() {
+         $('select').material_select();
+      });
+      </script>
+   </head>
 
     <body class="container">
-      <!-- <div class="row">
+      <div class="row">
         <h2 class="rsvp-header">Johnstone Customer Information</h2>
-      </div> -->
+      </div>
       <div class="row">
         <form class="col s12">
           <div class="row">
-            <label>Materialize Select</label>
               <div class="input-field col s12">
-               <select class="browser-default">
-                  <option value="" disabled selected>Select Fruit</option>
-                  <option value="1">Mango</option>
-                  <option value="2">Orange</option>
-                  <option value="3">Apple</option>
+               <select>
+                  <option value="" disabled selected>Select Branch</option>
+                  <option value="1">Augusta</option>
+                  <option value="2">Fayetteville</option>
+                  <option value="3">Monroe</option>
+                  <option value="3">Murrell's Inlet</option>
                </select>
               </div>
           </div>
@@ -69,6 +77,33 @@
             <div class="input-field col s12">
               <input id="customer_mobile_phone" type="text" class="validate">
               <label for="customer_mobile_phone">Mobile Phone</label>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="input-field col s12">
+             <select>
+                <option value="" disabled selected>Which best describes your company?</option>
+                <option value="1">Trade company (HVAC, Refrigeration, Plumbing or Mechanical)</option>
+                <option value="2">Commercial establishment (such as office, retail store, hotel, etc.)</option>
+                <option value="3">Educational facility (school district, college, university)</option>
+                <option value="4">Government facility</option>
+             </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+             <select>
+                <option value="" disabled selected>How many total installers and technicians are on staff?</option>
+                <option value="1">25 or more</option>
+                <option value="2">10 to 24</option>
+                <option value="3">6 to 9</option>
+                <option value="4">2 to 5</option>
+                <option value="5">1</option>
+                <option value="6">None</option>
+             </select>
             </div>
           </div>
        </form>
