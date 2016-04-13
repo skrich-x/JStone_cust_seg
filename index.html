@@ -6,6 +6,7 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <link rel="stylesheet" href="css/custom.css">
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
 
@@ -67,14 +68,11 @@
           </div>
 
           <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col s6">
               <input id="customer_office_phone" type="text" class="validate">
               <label for="customer_office_phone">Office Phone</label>
             </div>
-          </div>
-
-          <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col s6">
               <input id="customer_mobile_phone" type="text" class="validate">
               <label for="customer_mobile_phone">Mobile Phone</label>
             </div>
@@ -106,6 +104,20 @@
              </select>
             </div>
           </div>
+          <label for="">Which of the following types of work does your company do? (check all that apply)</label>
+          <p>
+            <input type="checkbox" id="test5" />
+            <label for="test5">Equipment installation in new construction</label>
+          </p>
+          <p>
+            <input type="checkbox" id="test6" />
+            <label for="test6">Equipment installation / retrofit in existing buildings</label>
+          </p>
+          <p>
+            <input type="checkbox" id="test7" />
+            <label for="test7">Repair and maintenance</label>
+          </p>
+
        </form>
      </div>
 
