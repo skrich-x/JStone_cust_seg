@@ -1,3 +1,3 @@
 #Johnstone Supply
 
-###Customer Segmentation Appß
+###Customer Segmentation App
