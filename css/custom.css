@@ -1,4 +1,14 @@
-
+h2, h3, h4{
+  font-weight: 300;
+}
+.header-image{
+  padding: 1em;
+}
+.outer-container{
+  padding: 1em;
+  margin-top:2em;
+  margin-bottom:3em;
+}
 /* label focus color */
 .input-field input[type=text]:focus + label {
   color: #004990;

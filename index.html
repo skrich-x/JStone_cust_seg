@@ -12,10 +12,10 @@
       <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
 
    </head>
-    <body class="container">
+    <body class="container z-depth-5 outer-container">
       <div class="col s12">
-          <div class="row valign-wrapper">
-              <img src="JS_square_logo.png" alt="Johnstone Logo" class="col s3 push-s4">
+          <div class="row valign-wrapper header-image center-align">
+              <img src="JS_square_logo.png" alt="Johnstone Logo" class="col s2 push-s5">
           </div>
       </div>
       <div class="row">
@@ -135,7 +135,7 @@
             </div>
           </div>
 
-          <label for="">Which of the following types of work does your company do? (check all that apply)</label>
+          <h6>Which of the following types of work does your company do? (check all that apply)</h6>
           <p>
             <input type="checkbox" id="new_construction" />
             <label for="new_construction">Equipment installation in new construction</label>
@@ -148,25 +148,23 @@
             <input type="checkbox" id="repair" />
             <label for="repair">Repair and maintenance</label>
           </p>
+
+          <!-- Modal Structure -->
           <div class="center-align">
             <button data-target="modal1" class="btn modal-trigger waves-effect waves-light waves-ripple red darken-4" type="submit" name="action">Submit
               <i class="material-icons right">send</i>
             </button>
           </div>
-          <!-- Modal Structure -->
           <div id="modal1" class="modal">
             <div class="modal-content center-align red-text text-darken-4">
               <h4>Thank you for Updating your Information!!</h4>
-              <p class="grey-text">Please contact your local Johnstone with any questions today!</p>
+              <p class="grey-text center-align">Please contact your local Johnstone with any questions today!</p>
               <a href="#!" class="modal-action modal-close waves-effect btn-floating btn-large blue darken-4"><i class="large material-icons">done</i></a>
             </div>
           </div>
+
        </form>
-
      </div>
-
-
-     <!--Import jQuery before materialize.js-->
      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
      <script type="text/javascript" src="js/materialize.min.js"></script>
      <script type="text/javascript" src="js/main.js"></script>
