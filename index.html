@@ -15,11 +15,11 @@
     <body class="container">
       <div class="col s12">
           <div class="row valign-wrapper">
-              <img src="JS_square_logo.png" alt="" class="col s3 push-s4">
+              <img src="JS_square_logo.png" alt="Johnstone Logo" class="col s3 push-s4">
           </div>
       </div>
       <div class="row">
-        <h2 class="customer_header blue-text">Johnstone Customer Information</h2>
+        <h2 class="customer-header center-align red-text text-darken-4">Johnstone Customer Information</h2>
       </div>
       <div class="row">
         <form id="customer_form" class="col s12">
@@ -27,10 +27,10 @@
               <div class="input-field col s12">
                <select id="branch_name">
                   <option value="" disabled selected>Select Branch</option>
-                  <option value="1">Augusta</option>
-                  <option value="2">Fayetteville</option>
-                  <option value="3">Monroe</option>
-                  <option value="3">Murrell's Inlet</option>
+                  <option value="Augusta">Augusta</option>
+                  <option value="Fayetteville">Fayetteville</option>
+                  <option value="Monroe">Monroe</option>
+                  <option value="Murrell's Inlet">Murrell's Inlet</option>
                </select>
               </div>
           </div>
@@ -47,7 +47,7 @@
 
           <div class="row">
             <div class="input-field col s12 m6">
-              <input id="first_name" type="text" class="validate">
+              <input id="first_name" type="text" class="require">
               <label for="first_name">First Name</label>
             </div>
             <div class="input-field col s12 m6">
@@ -65,7 +65,7 @@
 
           <div class="row">
             <div class="input-field col s12">
-              <input id="customer_email" type="email" class="validate">
+              <input id="customer_email" type="text" class="validate">
               <label for="customer_email">Email</label>
             </div>
           </div>
@@ -86,10 +86,10 @@
             <div class="input-field col s12">
              <select id="company_description">
                 <option value="" disabled selected>Which best describes your company?</option>
-                <option value="1">Trade company (HVAC, Refrigeration, Plumbing or Mechanical)</option>
-                <option value="2">Commercial establishment (such as office, retail store, hotel, etc.)</option>
-                <option value="3">Educational facility (school district, college, university)</option>
-                <option value="4">Government facility</option>
+                <option value="Trade Company">Trade company (HVAC, Refrigeration, Plumbing or Mechanical)</option>
+                <option value="Commercial">Commercial establishment (such as office, retail store, hotel, etc.)</option>
+                <option value="Education">Educational facility (school district, college, university)</option>
+                <option value="Government">Government facility</option>
              </select>
             </div>
           </div>
@@ -98,12 +98,12 @@
             <div class="input-field col s12">
              <select id="company_techs">
                 <option value="" disabled selected>How many total installers and technicians are on staff?</option>
-                <option value="1">25 or more</option>
-                <option value="2">10 to 24</option>
-                <option value="3">6 to 9</option>
-                <option value="4">2 to 5</option>
-                <option value="5">1</option>
-                <option value="6">None</option>
+                <option value="25 or more">25 or more</option>
+                <option value="10 to 24">10 to 24</option>
+                <option value="6 to 9">6 to 9</option>
+                <option value="2 to 5">2 to 5</option>
+                <option value="1">1</option>
+                <option value="None">None</option>
              </select>
             </div>
           </div>
@@ -149,12 +149,22 @@
             <label for="repair">Repair and maintenance</label>
           </p>
           <div class="center-align">
-            <button class="btn waves-effect waves-light red" type="submit" name="action">Submit
+            <button data-target="modal1" class="btn modal-trigger waves-effect waves-light waves-ripple red darken-4" type="submit" name="action">Submit
               <i class="material-icons right">send</i>
             </button>
           </div>
+          <!-- Modal Structure -->
+          <div id="modal1" class="modal">
+            <div class="modal-content center-align red-text text-darken-4">
+              <h4>Thank you for Updating your Information!!</h4>
+              <p class="grey-text">Please contact your local Johnstone with any questions today!</p>
+              <a href="#!" class="modal-action modal-close waves-effect btn-floating btn-large blue darken-4"><i class="large material-icons">done</i></a>
+            </div>
+          </div>
        </form>
+
      </div>
+
 
      <!--Import jQuery before materialize.js-->
      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

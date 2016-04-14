@@ -43,4 +43,10 @@ $("#customer_form").submit(function(event){
         Retrofit: retrofit,
         Repair: repair
       });
+
+      $("#customer_form").each(function(){
+        $('#modal1').openModal();
+        this.reset();
+      });
+
 });
