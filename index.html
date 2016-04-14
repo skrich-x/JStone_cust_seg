@@ -11,17 +11,15 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
       <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
 
-      <!--Correcting display issue for select-->
-      <script>
-         $(document).ready(function() {
-         $('select').material_select();
-      });
-      </script>
    </head>
-
     <body class="container">
+      <div class="col s12">
+          <div class="row valign-wrapper">
+              <img src="JS_square_logo.png" alt="" class="col s3 push-s4">
+          </div>
+      </div>
       <div class="row">
-        <h2 class="rsvp-header blue-text">Johnstone Customer Information</h2>
+        <h2 class="customer_header blue-text">Johnstone Customer Information</h2>
       </div>
       <div class="row">
         <form id="customer_form" class="col s12">
@@ -37,22 +35,22 @@
               </div>
           </div>
           <div class="row">
-            <div class="input-field col s6">
+            <div class="input-field col s12 m6">
               <input id="company_name" type="text" class="validate">
               <label for="company_name">Company Name</label>
             </div>
-            <div class="input-field col s6">
+            <div class="input-field col s12 m6">
               <input id="account_number" type="text" class="validate">
               <label for="account_number">Account Number</label>
             </div>
           </div>
 
           <div class="row">
-            <div class="input-field col s6">
+            <div class="input-field col s12 m6">
               <input id="first_name" type="text" class="validate">
               <label for="first_name">First Name</label>
             </div>
-            <div class="input-field col s6">
+            <div class="input-field col s12 m6">
               <input id="last_name" type="text" class="validate">
               <label for="last_name">Last Name</label>
             </div>
@@ -73,11 +71,11 @@
           </div>
 
           <div class="row">
-            <div class="input-field col s6">
+            <div class="input-field col s12 m6">
               <input id="customer_office_phone" type="text" class="validate">
               <label for="customer_office_phone">Office Phone</label>
             </div>
-            <div class="input-field col s6">
+            <div class="input-field col s12 m6">
               <input id="customer_mobile_phone" type="text" class="validate">
               <label for="customer_mobile_phone">Mobile Phone</label>
             </div>
@@ -111,7 +109,7 @@
           </div>
 
           <div class="row">
-            <div class="input-field col s6">
+            <div class="input-field col s12 m6">
              <select id="company_primary">
                 <option value="" disabled selected>What is your company's PRIMARY business focus?</option>
                 <option>Not a Trade Company</option>
@@ -123,7 +121,7 @@
                 <option>None</option>
              </select>
             </div>
-            <div class="input-field col s6">
+            <div class="input-field col s12 m6">
              <select id="company_secondary">
                 <option value="" disabled selected>What is your company's SECONDARY business focus?</option>
                 <option>Not a Trade Company</option>

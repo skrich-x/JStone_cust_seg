@@ -1,3 +1,8 @@
+//Correcting display issue for select//
+$(document).ready(function() {
+  $('select').material_select();
+});
+//Define and Push form content to Firebase//
 var fireUrl ="https://customer-info.firebaseio.com/";
 var newCustomer = new Firebase(fireUrl);
 
