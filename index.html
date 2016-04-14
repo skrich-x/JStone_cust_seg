@@ -27,7 +27,7 @@
         <form id="customer_form" class="col s12">
           <div class="row">
               <div class="input-field col s12">
-               <select>
+               <select id="branch_name">
                   <option value="" disabled selected>Select Branch</option>
                   <option value="1">Augusta</option>
                   <option value="2">Fayetteville</option>
@@ -37,9 +37,13 @@
               </div>
           </div>
           <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col s6">
               <input id="company_name" type="text" class="validate">
               <label for="company_name">Company Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="account_number" type="text" class="validate">
+              <label for="account_number">Account Number</label>
             </div>
           </div>
 
@@ -63,8 +67,8 @@
 
           <div class="row">
             <div class="input-field col s12">
-              <input id="email" type="email" class="validate">
-              <label for="email">Email</label>
+              <input id="customer_email" type="email" class="validate">
+              <label for="customer_email">Email</label>
             </div>
           </div>
 
@@ -82,7 +86,7 @@
 
           <div class="row">
             <div class="input-field col s12">
-             <select>
+             <select id="company_description">
                 <option value="" disabled selected>Which best describes your company?</option>
                 <option value="1">Trade company (HVAC, Refrigeration, Plumbing or Mechanical)</option>
                 <option value="2">Commercial establishment (such as office, retail store, hotel, etc.)</option>
@@ -94,7 +98,7 @@
 
           <div class="row">
             <div class="input-field col s12">
-             <select>
+             <select id="company_techs">
                 <option value="" disabled selected>How many total installers and technicians are on staff?</option>
                 <option value="1">25 or more</option>
                 <option value="2">10 to 24</option>
@@ -108,7 +112,7 @@
 
           <div class="row">
             <div class="input-field col s6">
-             <select>
+             <select id="company_primary">
                 <option value="" disabled selected>What is your company's PRIMARY business focus?</option>
                 <option>Not a Trade Company</option>
                 <option>Residential</option>
@@ -120,7 +124,7 @@
              </select>
             </div>
             <div class="input-field col s6">
-             <select>
+             <select id="company_secondary">
                 <option value="" disabled selected>What is your company's SECONDARY business focus?</option>
                 <option>Not a Trade Company</option>
                 <option>Residential</option>
@@ -135,16 +139,16 @@
 
           <label for="">Which of the following types of work does your company do? (check all that apply)</label>
           <p>
-            <input type="checkbox" id="test5" />
-            <label for="test5">Equipment installation in new construction</label>
+            <input type="checkbox" id="new_construction" />
+            <label for="new_construction">Equipment installation in new construction</label>
           </p>
           <p>
-            <input type="checkbox" id="test6" />
-            <label for="test6">Equipment installation / retrofit in existing buildings</label>
+            <input type="checkbox" id="retrofit" />
+            <label for="retrofit">Equipment installation / retrofit in existing buildings</label>
           </p>
           <p>
-            <input type="checkbox" id="test7" />
-            <label for="test7">Repair and maintenance</label>
+            <input type="checkbox" id="repair" />
+            <label for="repair">Repair and maintenance</label>
           </p>
           <div class="center-align">
             <button class="btn waves-effect waves-light red" type="submit" name="action">Submit
