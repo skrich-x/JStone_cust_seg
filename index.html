@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="css/custom.css">
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+      <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
 
       <!--Correcting display issue for select-->
       <script>
@@ -20,10 +21,10 @@
 
     <body class="container">
       <div class="row">
-        <h2 class="rsvp-header">Johnstone Customer Information</h2>
+        <h2 class="rsvp-header blue-text">Johnstone Customer Information</h2>
       </div>
       <div class="row">
-        <form class="col s12">
+        <form id="customer_form" class="col s12">
           <div class="row">
               <div class="input-field col s12">
                <select>
@@ -104,6 +105,34 @@
              </select>
             </div>
           </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+             <select>
+                <option value="" disabled selected>What is your company's PRIMARY business focus?</option>
+                <option>Not a Trade Company</option>
+                <option>Residential</option>
+                <option>Light Commercial</option>
+                <option>Refrigeration</option>
+                <option>Plumbing</option>
+                <option>Mechanical</option>
+                <option>None</option>
+             </select>
+            </div>
+            <div class="input-field col s6">
+             <select>
+                <option value="" disabled selected>What is your company's SECONDARY business focus?</option>
+                <option>Not a Trade Company</option>
+                <option>Residential</option>
+                <option>Light Commercial</option>
+                <option>Refrigeration</option>
+                <option>Plumbing</option>
+                <option>Mechanical</option>
+                <option>None</option>
+             </select>
+            </div>
+          </div>
+
           <label for="">Which of the following types of work does your company do? (check all that apply)</label>
           <p>
             <input type="checkbox" id="test5" />
@@ -117,12 +146,17 @@
             <input type="checkbox" id="test7" />
             <label for="test7">Repair and maintenance</label>
           </p>
-
+          <div class="center-align">
+            <button class="btn waves-effect waves-light red" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
        </form>
      </div>
 
      <!--Import jQuery before materialize.js-->
      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
      <script type="text/javascript" src="js/materialize.min.js"></script>
+     <script type="text/javascript" src="js/main.js"></script>
    </body>
 </html>
