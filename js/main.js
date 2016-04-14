@@ -1,7 +1,7 @@
 //Correcting display issue for select//
 $(document).ready(function() {
   $('select').material_select();
-});
+  });
 //Define and Push form content to Firebase//
 var fireUrl ="https://customer-info.firebaseio.com/";
 var newCustomer = new Firebase(fireUrl);
@@ -44,9 +44,11 @@ $("#customer_form").submit(function(event){
         Repair: repair
       });
 
+
       $("#customer_form").each(function(){
         $('#modal1').openModal();
         this.reset();
+        $(window).scrollTop(0);
       });
 
 });

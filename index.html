@@ -36,61 +36,48 @@
           </div>
           <div class="row">
             <div class="input-field col s12 m6">
-              <input id="company_name" type="text" class="validate">
+              <input id="company_name" type="text" >
               <label for="company_name">Company Name</label>
             </div>
             <div class="input-field col s12 m6">
-              <input id="account_number" type="text" class="validate">
+              <input id="account_number" type="text" >
               <label for="account_number">Account Number</label>
             </div>
           </div>
 
           <div class="row">
             <div class="input-field col s12 m6">
-              <input id="first_name" type="text" class="require">
+              <input id="first_name" type="text" >
               <label for="first_name">First Name</label>
             </div>
             <div class="input-field col s12 m6">
-              <input id="last_name" type="text" class="validate">
+              <input id="last_name" type="text" >
               <label for="last_name">Last Name</label>
             </div>
           </div>
 
           <div class="row">
             <div class="input-field col s12">
-              <input id="customer_title" type="text" class="validate">
+              <input id="customer_title" type="text" >
               <label for="customer_title">Job Title</label>
             </div>
           </div>
 
           <div class="row">
             <div class="input-field col s12">
-              <input id="customer_email" type="text" class="validate">
+              <input id="customer_email" type="text" >
               <label for="customer_email">Email</label>
             </div>
           </div>
 
           <div class="row">
             <div class="input-field col s12 m6">
-              <input id="customer_office_phone" type="text" class="validate">
+              <input id="customer_office_phone" type="text">
               <label for="customer_office_phone">Office Phone</label>
             </div>
             <div class="input-field col s12 m6">
-              <input id="customer_mobile_phone" type="text" class="validate">
+              <input id="customer_mobile_phone" type="text">
               <label for="customer_mobile_phone">Mobile Phone</label>
-            </div>
-          </div>
-
-
-          <div class="row">
-            <div class="input-field col s12">
-             <select id="company_description">
-                <option value="" disabled selected>Which best describes your company?</option>
-                <option value="Trade Company">Trade company (HVAC, Refrigeration, Plumbing or Mechanical)</option>
-                <option value="Commercial">Commercial establishment (such as office, retail store, hotel, etc.)</option>
-                <option value="Education">Educational facility (school district, college, university)</option>
-                <option value="Government">Government facility</option>
-             </select>
             </div>
           </div>
 
@@ -107,6 +94,19 @@
              </select>
             </div>
           </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+             <select id="company_description">
+                <option value="" disabled selected>Which best describes your company?</option>
+                <option value="Trade Company" id="trade_select">Trade company (HVAC, Refrigeration, Plumbing or Mechanical)</option>
+                <option value="Commercial">Commercial establishment (such as office, retail store, hotel, etc.)</option>
+                <option value="Education">Educational facility (school district, college, university)</option>
+                <option value="Government">Government facility</option>
+             </select>
+            </div>
+          </div>
+          <h5 class="red-text text-darken-4">Trade Company Only Use Only</h5>
 
           <div class="row">
             <div class="input-field col s12 m6">
@@ -137,15 +137,15 @@
 
           <h6>Which of the following types of work does your company do? (check all that apply)</h6>
           <p>
-            <input type="checkbox" id="new_construction" />
+            <input type="checkbox" id="new_construction" value="New Construction" />
             <label for="new_construction">Equipment installation in new construction</label>
           </p>
           <p>
-            <input type="checkbox" id="retrofit" />
+            <input type="checkbox" id="retrofit" value="Retrofit"/>
             <label for="retrofit">Equipment installation / retrofit in existing buildings</label>
           </p>
           <p>
-            <input type="checkbox" id="repair" />
+            <input type="checkbox" id="repair" value="Repair"/>
             <label for="repair">Repair and maintenance</label>
           </p>
 
