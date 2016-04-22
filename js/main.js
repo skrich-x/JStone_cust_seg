@@ -21,9 +21,11 @@ $("#customer_form").submit(function(event){
       var companyTechs = $("#company_techs").val();
       var companyPrimary = $("#company_primary").val();
       var companySecondary = $("#company_secondary").val();
-      var newConstruction = $("#new_construction").val();
-      var retrofit = $("#retrofit").val();
-      var repair = $("#repair").val();
+
+      //Checking if checkbox is checked//
+      var newConstruction = $("#new_construction").is(':checked');
+      var retrofit = $("#retrofit").is(':checked');
+      var repair = $("#repair").is(':checked');
 
       newCustomer.push({
         Branch: branch,
